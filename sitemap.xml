@@ -12,13 +12,18 @@
   <url>
     <loc>https://shotaiapp.com/blog/</loc>
   </url>
+  <!-- AUTO-SITEMAP:START -->
   <url>
     <loc>https://shotaiapp.com/blog/ai-swing-analysis-app.html</loc>
   </url>
   <url>
-    <loc>https://shotaiapp.com/blog/how-to-start-playing-tennis-without-a-coach.html</loc>
-  </url>
-  <url>
     <loc>https://shotaiapp.com/blog/beginner-tennis-technique-and-injury-prevention.html</loc>
   </url>
+  <url>
+    <loc>https://shotaiapp.com/blog/best-golf-training-aids-to-fix-your-swing.html</loc>
+  </url>
+  <url>
+    <loc>https://shotaiapp.com/blog/how-to-start-playing-tennis-without-a-coach.html</loc>
+  </url>
+      <!-- AUTO-SITEMAP:END -->
 </urlset>
