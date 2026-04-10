@@ -1,26 +1,32 @@
-// Carousel — 3 visible, center bigger, auto-advancing
-const track = document.getElementById('carouselTrack');
-if (track) {
+// Auto-advancing showcase carousels
+const carouselTracks = document.querySelectorAll('[data-carousel-track]');
+
+carouselTracks.forEach((track) => {
   const originalSlides = [...track.children];
   const count = originalSlides.length;
 
-  // Clone slides twice for seamless infinite loop
-  for (let i = 0; i < 2; i++) {
-    originalSlides.forEach(slide => track.appendChild(slide.cloneNode(true)));
+  if (!count) {
+    return;
   }
 
-  const allSlides = track.querySelectorAll('.carousel-slide');
-  let current = count; // start in the middle set
+  for (let i = 0; i < 2; i++) {
+    originalSlides.forEach((slide) => track.appendChild(slide.cloneNode(true)));
+  }
+
+  const allSlides = [...track.querySelectorAll('.carousel-slide')];
+  const wrapper = track.parentElement;
+  const intervalMs = Number(wrapper.dataset.carouselSpeed || 3000);
+  let current = count;
 
   function getMetrics() {
     const gap = parseFloat(getComputedStyle(track).gap) || 16;
     const slideW = allSlides[0].offsetWidth;
-    return { gap, step: slideW + gap };
+    return { step: slideW + gap };
   }
 
   function update(animate) {
     const { step } = getMetrics();
-    const wrapperW = track.parentElement.offsetWidth;
+    const wrapperW = wrapper.offsetWidth;
     const offset = (wrapperW / 2) - (step / 2) - (current * step);
 
     track.style.transition = animate
@@ -28,28 +34,23 @@ if (track) {
       : 'none';
     track.style.transform = `translateX(${offset}px)`;
 
-    allSlides.forEach((s, i) => {
-      s.classList.toggle('active', i === current);
+    allSlides.forEach((slide, index) => {
+      slide.classList.toggle('active', index === current);
     });
   }
 
-  // Initial render
   update(false);
-
-  // Re-center on resize
   window.addEventListener('resize', () => update(false));
 
-  // Auto-advance every 3s
   setInterval(() => {
-    current++;
+    current += 1;
     update(true);
 
-    // Seamlessly reset when past the second set
     if (current >= count * 2) {
       setTimeout(() => {
         current = count;
         update(false);
       }, 620);
     }
-  }, 3000);
-}
+  }, intervalMs);
+});
