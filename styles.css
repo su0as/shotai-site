@@ -59,7 +59,7 @@ a { color: inherit; text-decoration: none; }
 
 /* ── Hero ── */
 .hero {
-  padding: 60px 0 80px;
+  padding: 60px 0 56px;
   text-align: center;
 }
 
@@ -149,19 +149,8 @@ h2 {
 .store-badge:hover { opacity: 0.8; }
 
 /* Hero phone — no frame */
-.hero-phone {
-  display: flex;
-  justify-content: center;
-}
-
-.hero-phone img {
-  width: 280px;
-  border-radius: 36px;
-  filter: drop-shadow(0 24px 48px rgba(0,0,0,0.12));
-}
-
 .hero-showcase {
-  padding-top: 8px;
+  padding-top: 0;
 }
 
 .proof {
@@ -626,13 +615,43 @@ h2 {
   .nav-links {
     flex-wrap: wrap;
     gap: 12px;
+    font-size: 0.88rem;
   }
 
-  .hero { padding: 40px 0 60px; }
-  .hero-phone img { width: 240px; }
+  .hero { padding: 36px 0 40px; }
+
+  .rating {
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 20px;
+  }
+
+  .hero-copy {
+    font-size: 0.98rem;
+    margin-bottom: 22px;
+  }
+
+  .hero-points {
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+
+  .hero-points li {
+    width: 100%;
+    text-align: center;
+  }
 
   .carousel-slide { width: 180px; }
   .showcase-carousel-wrapper .carousel-slide { width: 220px; }
+
+  .app-showcase {
+    padding: 8px 0 64px;
+  }
+
+  .app-showcase .container > p {
+    margin: -24px auto 20px;
+    font-size: 0.95rem;
+  }
 
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -654,12 +673,34 @@ h2 {
     align-items: flex-start;
   }
 
+  .article-app-promo .store-badge img,
+  .hero-cta .store-badge img {
+    height: 40px;
+  }
+
+  .proof,
+  .features,
+  .sports,
+  .content-strip,
+  .faq,
+  .cta {
+    padding-bottom: 56px;
+  }
+
   .sports-grid { grid-template-columns: 1fr; gap: 12px; }
   .sport-card { padding: 24px 20px; }
 }
 
 @media (max-width: 380px) {
+  .nav-links {
+    width: 100%;
+  }
+
   .features-grid {
     grid-template-columns: 1fr;
+  }
+
+  .showcase-carousel-wrapper .carousel-slide {
+    width: 188px;
   }
 }
