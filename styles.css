@@ -484,9 +484,12 @@ h2 {
 }
 
 .article-hero {
+  width: min(100%, 440px);
+  max-height: 56vh;
+  object-fit: cover;
   border-radius: 28px;
   box-shadow: 0 20px 48px rgba(0,0,0,0.10);
-  margin: 24px 0 32px;
+  margin: 20px auto 28px;
 }
 
 .article-app-promo {
@@ -671,6 +674,12 @@ h2 {
   .article-app-promo {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .article-hero {
+    width: min(100%, 320px);
+    max-height: 46vh;
+    margin: 18px auto 22px;
   }
 
   .article-app-promo .store-badge img,
