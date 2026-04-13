@@ -14,9 +14,10 @@
     "description": "A diagnosis-first guide to the golf training aids that help slicers improve path, face control, and contact instead of buying random fixes.",
     "category": "Golf slice fix",
     "publish_on": "2026-04-13",
-    "status": "queued",
+    "status": "published",
     "source_path": "scheduled-posts/blog/best-golf-training-aids-for-a-slice.html",
-    "live_path": "blog/best-golf-training-aids-for-a-slice.html"
+    "live_path": "blog/best-golf-training-aids-for-a-slice.html",
+    "published_at": "2026-04-13"
   },
   {
     "slug": "best-golf-practice-equipment-for-home",
