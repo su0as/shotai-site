@@ -25,9 +25,28 @@
     "description": "What home golf practice equipment is actually worth buying if you want better contact, path, and feedback without wasting space or money.",
     "category": "Home practice",
     "publish_on": "2026-04-14",
-    "status": "queued",
+    "status": "published",
     "source_path": "scheduled-posts/blog/best-golf-practice-equipment-for-home.html",
-    "live_path": "blog/best-golf-practice-equipment-for-home.html"
+    "live_path": "blog/best-golf-practice-equipment-for-home.html",
+    "published_at": "2026-04-14"
+  },
+  {
+    "slug": "why-your-practice-swing-feels-different-from-your-real-golf-swing",
+    "title": "Why Your Practice Swing Feels Different From Your Real Golf Swing",
+    "description": "A practical guide for golfers whose swing changes the moment a ball is there.",
+    "category": "Golf improvement",
+    "publish_on": "2026-04-14",
+    "status": "published",
+    "live_path": "blog/why-your-practice-swing-feels-different-from-your-real-golf-swing.html"
+  },
+  {
+    "slug": "10-ways-to-improve-golf-swing-consistency",
+    "title": "10 Ways to Improve Golf Swing Consistency Without Chasing Quick Fixes",
+    "description": "Ten practical ways golfers can improve swing consistency with better setup, better practice, and better feedback.",
+    "category": "Golf consistency",
+    "publish_on": "2026-04-14",
+    "status": "published",
+    "live_path": "blog/10-ways-to-improve-golf-swing-consistency.html"
   },
   {
     "slug": "should-beginners-buy-golf-training-aids-or-lessons-first",
@@ -38,6 +57,16 @@
     "status": "queued",
     "source_path": "scheduled-posts/blog/should-beginners-buy-golf-training-aids-or-lessons-first.html",
     "live_path": "blog/should-beginners-buy-golf-training-aids-or-lessons-first.html"
+  },
+  {
+    "slug": "5-golf-practice-habits-that-actually-help-you-improve",
+    "title": "5 Golf Practice Habits That Actually Help You Improve",
+    "description": "A practical guide to the golf practice habits that make range time actually useful.",
+    "category": "Golf practice",
+    "publish_on": "2026-04-15",
+    "status": "queued",
+    "source_path": "scheduled-posts/blog/5-golf-practice-habits-that-actually-help-you-improve.html",
+    "live_path": "blog/5-golf-practice-habits-that-actually-help-you-improve.html"
   },
   {
     "slug": "best-phone-setup-to-record-your-golf-swing",
@@ -69,6 +98,24 @@
     "live_path": "blog/ai-swing-analysis-app.html"
   },
   {
+    "slug": "10-ways-to-improve-tennis-consistency",
+    "title": "10 Ways to Improve Tennis Consistency Without Overcomplicating Your Game",
+    "description": "Ten practical ways tennis players can improve consistency through better spacing, better targets, and better feedback.",
+    "category": "Tennis consistency",
+    "publish_on": "2026-04-14",
+    "status": "published",
+    "live_path": "blog/10-ways-to-improve-tennis-consistency.html"
+  },
+  {
+    "slug": "5-tennis-practice-habits-that-actually-make-you-better",
+    "title": "5 Tennis Practice Habits That Actually Make You Better",
+    "description": "A practical guide to the practice habits that help tennis players improve faster.",
+    "category": "Tennis practice",
+    "publish_on": "2026-04-14",
+    "status": "published",
+    "live_path": "blog/5-tennis-practice-habits-that-actually-make-you-better.html"
+  },
+  {
     "slug": "how-to-start-playing-tennis-without-a-coach",
     "title": "How to Start Playing Tennis Without a Coach",
     "description": "A practical starting plan for park players learning the basics, building safe technique, and avoiding early frustration.",
@@ -76,6 +123,16 @@
     "publish_on": "2026-04-10",
     "status": "published",
     "live_path": "blog/how-to-start-playing-tennis-without-a-coach.html"
+  },
+  {
+    "slug": "how-to-get-better-at-tennis-without-playing-every-day",
+    "title": "How to Get Better at Tennis Without Playing Every Day",
+    "description": "A practical guide to improving at tennis even if you only get on court a few times a week.",
+    "category": "Tennis improvement",
+    "publish_on": "2026-04-15",
+    "status": "queued",
+    "source_path": "scheduled-posts/blog/how-to-get-better-at-tennis-without-playing-every-day.html",
+    "live_path": "blog/how-to-get-better-at-tennis-without-playing-every-day.html"
   },
   {
     "slug": "beginner-tennis-technique-and-injury-prevention",
