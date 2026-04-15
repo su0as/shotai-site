@@ -54,9 +54,10 @@
     "description": "An honest guide to whether beginner golfers should spend their first money on training aids, lessons, or simple feedback tools.",
     "category": "Beginner golf",
     "publish_on": "2026-04-15",
-    "status": "queued",
+    "status": "published",
     "source_path": "scheduled-posts/blog/should-beginners-buy-golf-training-aids-or-lessons-first.html",
-    "live_path": "blog/should-beginners-buy-golf-training-aids-or-lessons-first.html"
+    "live_path": "blog/should-beginners-buy-golf-training-aids-or-lessons-first.html",
+    "published_at": "2026-04-15"
   },
   {
     "slug": "5-golf-practice-habits-that-actually-help-you-improve",
@@ -64,9 +65,10 @@
     "description": "A practical guide to the golf practice habits that make range time actually useful.",
     "category": "Golf practice",
     "publish_on": "2026-04-15",
-    "status": "queued",
+    "status": "published",
     "source_path": "scheduled-posts/blog/5-golf-practice-habits-that-actually-help-you-improve.html",
-    "live_path": "blog/5-golf-practice-habits-that-actually-help-you-improve.html"
+    "live_path": "blog/5-golf-practice-habits-that-actually-help-you-improve.html",
+    "published_at": "2026-04-15"
   },
   {
     "slug": "best-phone-setup-to-record-your-golf-swing",
@@ -130,9 +132,10 @@
     "description": "A practical guide to improving at tennis even if you only get on court a few times a week.",
     "category": "Tennis improvement",
     "publish_on": "2026-04-15",
-    "status": "queued",
+    "status": "published",
     "source_path": "scheduled-posts/blog/how-to-get-better-at-tennis-without-playing-every-day.html",
-    "live_path": "blog/how-to-get-better-at-tennis-without-playing-every-day.html"
+    "live_path": "blog/how-to-get-better-at-tennis-without-playing-every-day.html",
+    "published_at": "2026-04-15"
   },
   {
     "slug": "beginner-tennis-technique-and-injury-prevention",
