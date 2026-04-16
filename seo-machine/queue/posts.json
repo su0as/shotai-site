@@ -76,9 +76,10 @@
     "description": "How to film your golf swing properly with a phone so you get useful angles, cleaner comparisons, and better practice feedback.",
     "category": "Video feedback",
     "publish_on": "2026-04-16",
-    "status": "queued",
+    "status": "published",
     "source_path": "scheduled-posts/blog/best-phone-setup-to-record-your-golf-swing.html",
-    "live_path": "blog/best-phone-setup-to-record-your-golf-swing.html"
+    "live_path": "blog/best-phone-setup-to-record-your-golf-swing.html",
+    "published_at": "2026-04-16"
   },
   {
     "slug": "how-to-use-video-feedback-with-golf-drills",
