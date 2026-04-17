@@ -87,9 +87,10 @@
     "description": "A practical workflow for combining golf drills with swing video so you know whether the change is real or just a temporary feel.",
     "category": "Golf drills",
     "publish_on": "2026-04-17",
-    "status": "queued",
+    "status": "published",
     "source_path": "scheduled-posts/blog/how-to-use-video-feedback-with-golf-drills.html",
-    "live_path": "blog/how-to-use-video-feedback-with-golf-drills.html"
+    "live_path": "blog/how-to-use-video-feedback-with-golf-drills.html",
+    "published_at": "2026-04-17"
   },
   {
     "slug": "ai-swing-analysis-app",
