@@ -43,6 +43,11 @@ def replace_between_markers(content: str, start: str, end: str, replacement: str
     return content[:start_idx] + "\n" + replacement + "\n      " + content[end_idx:]
 
 
+def public_url(path: str) -> str:
+    cleaned = path.removesuffix("index.html").removesuffix(".html").rstrip("/")
+    return f"/{cleaned}" if cleaned else "/"
+
+
 def render_blog_cards(posts: list[dict]) -> str:
     published = [post for post in posts if post["status"] == "published"]
     published = [
@@ -58,7 +63,7 @@ def render_blog_cards(posts: list[dict]) -> str:
         cards.append(
             "        <article class=\"blog-card\">\n"
             f"          <p class=\"section-label\">{escape(post['category'])}</p>\n"
-            f"          <h2><a href=\"/{escape(post['live_path'])}\">{escape(post['title'])}</a></h2>\n"
+            f"          <h2><a href=\"{escape(public_url(post['live_path']))}\">{escape(post['title'])}</a></h2>\n"
             f"          <p>{escape(post['description'])}</p>\n"
             "        </article>"
         )
@@ -74,7 +79,7 @@ def render_sitemap_urls(posts: list[dict]) -> str:
     for post in published:
         items.append(
             "  <url>\n"
-            f"    <loc>{SITE_ORIGIN}/{escape(post['live_path'])}</loc>\n"
+            f"    <loc>{SITE_ORIGIN}{escape(public_url(post['live_path']))}</loc>\n"
             "  </url>"
         )
     return "\n".join(items)

@@ -147,5 +147,50 @@
     "publish_on": "2026-04-10",
     "status": "published",
     "live_path": "blog/beginner-tennis-technique-and-injury-prevention.html"
+  },
+  {
+    "slug": "how-to-actually-get-better-at-golf",
+    "title": "How to Actually Get Better at Golf Without Wasting Time",
+    "description": "A practical golf improvement roadmap for newer players who want to stop guessing and build real consistency.",
+    "category": "Golf roadmap",
+    "publish_on": "2026-04-24",
+    "status": "published",
+    "live_path": "blog/how-to-actually-get-better-at-golf.html"
+  },
+  {
+    "slug": "beginner-golf-practice-plan-that-actually-works",
+    "title": "Beginner Golf Practice Plan That Actually Works",
+    "description": "A simple weekly golf practice structure for beginners who want real improvement instead of random repetition.",
+    "category": "Golf practice plan",
+    "publish_on": "2026-04-24",
+    "status": "published",
+    "live_path": "blog/beginner-golf-practice-plan-that-actually-works.html"
+  },
+  {
+    "slug": "how-often-should-you-take-golf-lessons",
+    "title": "How Often Should You Take Golf Lessons?",
+    "description": "A practical lesson cadence for golfers who want improvement, not dependence on constant tweaks.",
+    "category": "Golf lessons",
+    "publish_on": "2026-04-24",
+    "status": "published",
+    "live_path": "blog/how-often-should-you-take-golf-lessons.html"
+  },
+  {
+    "slug": "how-to-actually-get-better-at-tennis",
+    "title": "How to Actually Get Better at Tennis Without Overloading Yourself",
+    "description": "A direct tennis improvement roadmap for players who want cleaner strokes and better practice without tip overload.",
+    "category": "Tennis roadmap",
+    "publish_on": "2026-04-24",
+    "status": "published",
+    "live_path": "blog/how-to-actually-get-better-at-tennis.html"
+  },
+  {
+    "slug": "adult-tennis-practice-plan-for-busy-players",
+    "title": "Adult Tennis Practice Plan for Busy Players",
+    "description": "A realistic weekly tennis improvement plan for adults who do not live on court.",
+    "category": "Busy-player tennis",
+    "publish_on": "2026-04-24",
+    "status": "published",
+    "live_path": "blog/adult-tennis-practice-plan-for-busy-players.html"
   }
 ]
