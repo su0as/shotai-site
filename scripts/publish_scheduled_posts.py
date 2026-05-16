@@ -77,9 +77,11 @@ def render_sitemap_urls(posts: list[dict]) -> str:
     )
     items = []
     for post in published:
+        lastmod = escape(post.get("updated_on") or post.get("published_at") or post["publish_on"])
         items.append(
             "  <url>\n"
             f"    <loc>{SITE_ORIGIN}{escape(public_url(post['live_path']))}</loc>\n"
+            f"    <lastmod>{lastmod}</lastmod>\n"
             "  </url>"
         )
     return "\n".join(items)

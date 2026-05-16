@@ -40,6 +40,33 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://shotaiapp.com/#organization",
+          "name": "Shot AI",
+          "url": "https://shotaiapp.com/",
+          "logo": "https://shotaiapp.com/images/saiicon.png",
+          "sameAs": [
+            "https://apps.apple.com/us/app/id6753973996"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://shotaiapp.com/#website",
+          "name": "Shot AI",
+          "url": "https://shotaiapp.com/",
+          "publisher": {
+            "@id": "https://shotaiapp.com/#organization"
+          },
+          "inLanguage": "en"
+        }
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "Shot AI",
       "applicationCategory": "SportsApplication",
@@ -47,6 +74,9 @@
       "url": "https://shotaiapp.com/",
       "image": "https://shotaiapp.com/images/mockup-home.png",
       "description": "AI sports coach app for golf, tennis, and pickleball with swing analysis, skeleton tracking, and live coaching.",
+      "publisher": {
+        "@id": "https://shotaiapp.com/#organization"
+      },
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -129,7 +159,7 @@
 
         <div class="hero-cta">
           <a href="https://apps.apple.com/us/app/id6753973996" target="_blank" rel="noopener" class="store-badge">
-            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download Shot AI on the App Store" height="44" />
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download Shot AI on the App Store" height="44" loading="lazy" decoding="async" />
           </a>
         </div>
 
@@ -151,22 +181,22 @@
       <div class="showcase-carousel-wrapper" data-carousel-speed="2600">
         <div class="carousel-track" data-carousel-track>
           <div class="carousel-slide">
-            <img src="images/shot ai home page.png" alt="Shot AI home dashboard preview" />
+            <img src="images/shot ai home page.png" alt="Shot AI home dashboard preview" loading="lazy" decoding="async" />
           </div>
           <div class="carousel-slide">
-            <img src="images/record your swing.png" alt="Shot AI record your swing preview" />
+            <img src="images/record your swing.png" alt="Shot AI record your swing preview" loading="lazy" decoding="async" />
           </div>
           <div class="carousel-slide">
-            <img src="images/analysis result.png" alt="Shot AI analysis results preview" />
+            <img src="images/analysis result.png" alt="Shot AI analysis results preview" loading="lazy" decoding="async" />
           </div>
           <div class="carousel-slide">
-            <img src="images/live ai coaching.png" alt="Shot AI live AI coaching preview" />
+            <img src="images/live ai coaching.png" alt="Shot AI live AI coaching preview" loading="lazy" decoding="async" />
           </div>
           <div class="carousel-slide">
-            <img src="images/log progress.png" alt="Shot AI progress tracking preview" />
+            <img src="images/log progress.png" alt="Shot AI progress tracking preview" loading="lazy" decoding="async" />
           </div>
           <div class="carousel-slide">
-            <img src="images/share scorecards.png" alt="Shot AI share scorecards preview" />
+            <img src="images/share scorecards.png" alt="Shot AI share scorecards preview" loading="lazy" decoding="async" />
           </div>
         </div>
       </div>
@@ -200,34 +230,34 @@
       <div class="carousel-wrapper">
         <div class="carousel-track" data-carousel-track>
           <div class="carousel-slide">
-            <img src="images/swing-analysis-golf.png" alt="Shot AI golf swing analysis screen" />
+            <img src="images/swing-analysis-golf.png" alt="Shot AI golf swing analysis screen" loading="lazy" decoding="async" />
           </div>
           <div class="carousel-slide">
-            <img src="images/coaching-tennis.png" alt="Shot AI tennis live coaching screen" />
+            <img src="images/coaching-tennis.png" alt="Shot AI tennis live coaching screen" loading="lazy" decoding="async" />
           </div>
           <div class="carousel-slide">
-            <img src="images/skeleton-golf.png" alt="Shot AI golf skeleton tracking screen" />
+            <img src="images/skeleton-golf.png" alt="Shot AI golf skeleton tracking screen" loading="lazy" decoding="async" />
           </div>
           <div class="carousel-slide">
-            <img src="images/share-tennis.png" alt="Shot AI tennis score share screen" />
+            <img src="images/share-tennis.png" alt="Shot AI tennis score share screen" loading="lazy" decoding="async" />
           </div>
           <div class="carousel-slide">
-            <img src="images/breakdown-golf.png" alt="Shot AI golf breakdown screen" />
+            <img src="images/breakdown-golf.png" alt="Shot AI golf breakdown screen" loading="lazy" decoding="async" />
           </div>
           <div class="carousel-slide">
-            <img src="images/swing-analysis-tennis.png" alt="Shot AI tennis swing analysis screen" />
+            <img src="images/swing-analysis-tennis.png" alt="Shot AI tennis swing analysis screen" loading="lazy" decoding="async" />
           </div>
           <div class="carousel-slide">
-            <img src="images/coaching-golf.png" alt="Shot AI golf live coaching screen" />
+            <img src="images/coaching-golf.png" alt="Shot AI golf live coaching screen" loading="lazy" decoding="async" />
           </div>
           <div class="carousel-slide">
-            <img src="images/skeleton-tennis.png" alt="Shot AI tennis skeleton tracking screen" />
+            <img src="images/skeleton-tennis.png" alt="Shot AI tennis skeleton tracking screen" loading="lazy" decoding="async" />
           </div>
           <div class="carousel-slide">
-            <img src="images/share-golf.png" alt="Shot AI golf score share screen" />
+            <img src="images/share-golf.png" alt="Shot AI golf score share screen" loading="lazy" decoding="async" />
           </div>
           <div class="carousel-slide">
-            <img src="images/breakdown-tennis.png" alt="Shot AI tennis breakdown screen" />
+            <img src="images/breakdown-tennis.png" alt="Shot AI tennis breakdown screen" loading="lazy" decoding="async" />
           </div>
         </div>
       </div>
@@ -328,7 +358,7 @@
         <h2>Ready to level up your game?</h2>
         <p>Download Shot AI and turn your next practice session into measurable feedback.</p>
         <a href="https://apps.apple.com/us/app/id6753973996" target="_blank" rel="noopener" class="store-badge">
-          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download Shot AI on the App Store" height="44" />
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download Shot AI on the App Store" height="44" loading="lazy" decoding="async" />
         </a>
       </div>
     </section>

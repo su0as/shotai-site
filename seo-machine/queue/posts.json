@@ -6,7 +6,8 @@
     "category": "Golf buyer intent",
     "publish_on": "2026-04-10",
     "status": "published",
-    "live_path": "blog/best-golf-training-aids-to-fix-your-swing.html"
+    "live_path": "blog/best-golf-training-aids-to-fix-your-swing.html",
+    "updated_on": "2026-05-16"
   },
   {
     "slug": "best-golf-training-aids-for-a-slice",
@@ -17,7 +18,8 @@
     "status": "published",
     "source_path": "scheduled-posts/blog/best-golf-training-aids-for-a-slice.html",
     "live_path": "blog/best-golf-training-aids-for-a-slice.html",
-    "published_at": "2026-04-13"
+    "published_at": "2026-04-13",
+    "updated_on": "2026-05-16"
   },
   {
     "slug": "best-golf-practice-equipment-for-home",
@@ -28,7 +30,8 @@
     "status": "published",
     "source_path": "scheduled-posts/blog/best-golf-practice-equipment-for-home.html",
     "live_path": "blog/best-golf-practice-equipment-for-home.html",
-    "published_at": "2026-04-14"
+    "published_at": "2026-04-14",
+    "updated_on": "2026-05-16"
   },
   {
     "slug": "why-your-practice-swing-feels-different-from-your-real-golf-swing",
@@ -37,7 +40,8 @@
     "category": "Golf improvement",
     "publish_on": "2026-04-14",
     "status": "published",
-    "live_path": "blog/why-your-practice-swing-feels-different-from-your-real-golf-swing.html"
+    "live_path": "blog/why-your-practice-swing-feels-different-from-your-real-golf-swing.html",
+    "updated_on": "2026-05-16"
   },
   {
     "slug": "10-ways-to-improve-golf-swing-consistency",
@@ -46,7 +50,8 @@
     "category": "Golf consistency",
     "publish_on": "2026-04-14",
     "status": "published",
-    "live_path": "blog/10-ways-to-improve-golf-swing-consistency.html"
+    "live_path": "blog/10-ways-to-improve-golf-swing-consistency.html",
+    "updated_on": "2026-05-16"
   },
   {
     "slug": "should-beginners-buy-golf-training-aids-or-lessons-first",
@@ -57,7 +62,8 @@
     "status": "published",
     "source_path": "scheduled-posts/blog/should-beginners-buy-golf-training-aids-or-lessons-first.html",
     "live_path": "blog/should-beginners-buy-golf-training-aids-or-lessons-first.html",
-    "published_at": "2026-04-15"
+    "published_at": "2026-04-15",
+    "updated_on": "2026-05-16"
   },
   {
     "slug": "5-golf-practice-habits-that-actually-help-you-improve",
@@ -68,7 +74,8 @@
     "status": "published",
     "source_path": "scheduled-posts/blog/5-golf-practice-habits-that-actually-help-you-improve.html",
     "live_path": "blog/5-golf-practice-habits-that-actually-help-you-improve.html",
-    "published_at": "2026-04-15"
+    "published_at": "2026-04-15",
+    "updated_on": "2026-05-16"
   },
   {
     "slug": "best-phone-setup-to-record-your-golf-swing",
@@ -79,7 +86,8 @@
     "status": "published",
     "source_path": "scheduled-posts/blog/best-phone-setup-to-record-your-golf-swing.html",
     "live_path": "blog/best-phone-setup-to-record-your-golf-swing.html",
-    "published_at": "2026-04-16"
+    "published_at": "2026-04-16",
+    "updated_on": "2026-05-16"
   },
   {
     "slug": "how-to-use-video-feedback-with-golf-drills",
@@ -90,7 +98,8 @@
     "status": "published",
     "source_path": "scheduled-posts/blog/how-to-use-video-feedback-with-golf-drills.html",
     "live_path": "blog/how-to-use-video-feedback-with-golf-drills.html",
-    "published_at": "2026-04-17"
+    "published_at": "2026-04-17",
+    "updated_on": "2026-05-16"
   },
   {
     "slug": "ai-swing-analysis-app",
@@ -99,7 +108,8 @@
     "category": "Category intent",
     "publish_on": "2026-04-10",
     "status": "published",
-    "live_path": "blog/ai-swing-analysis-app.html"
+    "live_path": "blog/ai-swing-analysis-app.html",
+    "updated_on": "2026-05-16"
   },
   {
     "slug": "10-ways-to-improve-tennis-consistency",
@@ -108,7 +118,8 @@
     "category": "Tennis consistency",
     "publish_on": "2026-04-14",
     "status": "published",
-    "live_path": "blog/10-ways-to-improve-tennis-consistency.html"
+    "live_path": "blog/10-ways-to-improve-tennis-consistency.html",
+    "updated_on": "2026-05-16"
   },
   {
     "slug": "5-tennis-practice-habits-that-actually-make-you-better",
@@ -117,7 +128,8 @@
     "category": "Tennis practice",
     "publish_on": "2026-04-14",
     "status": "published",
-    "live_path": "blog/5-tennis-practice-habits-that-actually-make-you-better.html"
+    "live_path": "blog/5-tennis-practice-habits-that-actually-make-you-better.html",
+    "updated_on": "2026-05-16"
   },
   {
     "slug": "how-to-start-playing-tennis-without-a-coach",
@@ -126,7 +138,8 @@
     "category": "Beginner tennis",
     "publish_on": "2026-04-10",
     "status": "published",
-    "live_path": "blog/how-to-start-playing-tennis-without-a-coach.html"
+    "live_path": "blog/how-to-start-playing-tennis-without-a-coach.html",
+    "updated_on": "2026-05-16"
   },
   {
     "slug": "how-to-get-better-at-tennis-without-playing-every-day",
@@ -137,7 +150,8 @@
     "status": "published",
     "source_path": "scheduled-posts/blog/how-to-get-better-at-tennis-without-playing-every-day.html",
     "live_path": "blog/how-to-get-better-at-tennis-without-playing-every-day.html",
-    "published_at": "2026-04-15"
+    "published_at": "2026-04-15",
+    "updated_on": "2026-05-16"
   },
   {
     "slug": "beginner-tennis-technique-and-injury-prevention",
@@ -146,7 +160,8 @@
     "category": "Injury prevention",
     "publish_on": "2026-04-10",
     "status": "published",
-    "live_path": "blog/beginner-tennis-technique-and-injury-prevention.html"
+    "live_path": "blog/beginner-tennis-technique-and-injury-prevention.html",
+    "updated_on": "2026-05-16"
   },
   {
     "slug": "how-to-actually-get-better-at-golf",
@@ -155,7 +170,8 @@
     "category": "Golf roadmap",
     "publish_on": "2026-04-24",
     "status": "published",
-    "live_path": "blog/how-to-actually-get-better-at-golf.html"
+    "live_path": "blog/how-to-actually-get-better-at-golf.html",
+    "updated_on": "2026-05-16"
   },
   {
     "slug": "beginner-golf-practice-plan-that-actually-works",
@@ -164,7 +180,8 @@
     "category": "Golf practice plan",
     "publish_on": "2026-04-24",
     "status": "published",
-    "live_path": "blog/beginner-golf-practice-plan-that-actually-works.html"
+    "live_path": "blog/beginner-golf-practice-plan-that-actually-works.html",
+    "updated_on": "2026-05-16"
   },
   {
     "slug": "how-often-should-you-take-golf-lessons",
@@ -173,7 +190,8 @@
     "category": "Golf lessons",
     "publish_on": "2026-04-24",
     "status": "published",
-    "live_path": "blog/how-often-should-you-take-golf-lessons.html"
+    "live_path": "blog/how-often-should-you-take-golf-lessons.html",
+    "updated_on": "2026-05-16"
   },
   {
     "slug": "how-to-actually-get-better-at-tennis",
@@ -182,7 +200,8 @@
     "category": "Tennis roadmap",
     "publish_on": "2026-04-24",
     "status": "published",
-    "live_path": "blog/how-to-actually-get-better-at-tennis.html"
+    "live_path": "blog/how-to-actually-get-better-at-tennis.html",
+    "updated_on": "2026-05-16"
   },
   {
     "slug": "adult-tennis-practice-plan-for-busy-players",
@@ -191,6 +210,7 @@
     "category": "Busy-player tennis",
     "publish_on": "2026-04-24",
     "status": "published",
-    "live_path": "blog/adult-tennis-practice-plan-for-busy-players.html"
+    "live_path": "blog/adult-tennis-practice-plan-for-busy-players.html",
+    "updated_on": "2026-05-16"
   }
 ]
