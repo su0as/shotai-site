@@ -1,56 +1,65 @@
-// Auto-advancing showcase carousels
-const carouselTracks = document.querySelectorAll('[data-carousel-track]');
+/* Shot AI — site interactions */
+(function () {
+  "use strict";
 
-carouselTracks.forEach((track) => {
-  const originalSlides = [...track.children];
-  const count = originalSlides.length;
-
-  if (!count) {
-    return;
-  }
-
-  for (let i = 0; i < 2; i++) {
-    originalSlides.forEach((slide) => track.appendChild(slide.cloneNode(true)));
-  }
-
-  const allSlides = [...track.querySelectorAll('.carousel-slide')];
-  const wrapper = track.parentElement;
-  const intervalMs = Number(wrapper.dataset.carouselSpeed || 3000);
-  let current = count;
-
-  function getMetrics() {
-    const gap = parseFloat(getComputedStyle(track).gap) || 16;
-    const slideW = allSlides[0].offsetWidth;
-    return { step: slideW + gap };
-  }
-
-  function update(animate) {
-    const { step } = getMetrics();
-    const wrapperW = wrapper.offsetWidth;
-    const offset = (wrapperW / 2) - (step / 2) - (current * step);
-
-    track.style.transition = animate
-      ? 'transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1)'
-      : 'none';
-    track.style.transform = `translateX(${offset}px)`;
-
-    allSlides.forEach((slide, index) => {
-      slide.classList.toggle('active', index === current);
+  /* ---------- FAQ accordion ---------- */
+  document.querySelectorAll(".faq-item").forEach(function (item) {
+    var q = item.querySelector(".faq-q");
+    var a = item.querySelector(".faq-a");
+    if (!q || !a) return;
+    q.addEventListener("click", function () {
+      var open = item.classList.contains("open");
+      if (open) {
+        item.classList.remove("open");
+        a.style.maxHeight = null;
+      } else {
+        item.classList.add("open");
+        a.style.maxHeight = a.scrollHeight + "px";
+      }
     });
+  });
+
+  /* ---------- Scroll reveal ---------- */
+  var reveals = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add("in");
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+    );
+    reveals.forEach(function (el) { io.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add("in"); });
   }
 
-  update(false);
-  window.addEventListener('resize', () => update(false));
+  /* ---------- Sticky mobile CTA ---------- */
+  var cta = document.getElementById("mobileCta");
+  if (cta) {
+    var onScroll = function () {
+      if (window.scrollY > 620) cta.classList.add("show");
+      else cta.classList.remove("show");
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
 
-  setInterval(() => {
-    current += 1;
-    update(true);
-
-    if (current >= count * 2) {
-      setTimeout(() => {
-        current = count;
-        update(false);
-      }, 620);
-    }
-  }, intervalMs);
-});
+  /* ---------- Smooth anchor offset for sticky nav ---------- */
+  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      var id = link.getAttribute("href");
+      if (id.length < 2) return;
+      var target = document.querySelector(id);
+      if (!target) return;
+      e.preventDefault();
+      var navH = parseInt(getComputedStyle(document.documentElement).getPropertyValue("--nav-h")) || 64;
+      var top = target.getBoundingClientRect().top + window.scrollY - navH - 12;
+      window.scrollTo({ top: top, behavior: "smooth" });
+    });
+  });
+})();
