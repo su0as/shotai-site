@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /scheduled-posts/
 
-Sitemap: https://shotaiapp.com/sitemap.xml
+Sitemap: https://www.shotaiapp.com/sitemap.xml
