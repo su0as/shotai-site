@@ -49,6 +49,60 @@
     onScroll();
   }
 
+  /* ---------- Showcase carousel ---------- */
+  document.querySelectorAll(".showcase-carousel-wrapper").forEach(function (wrapper) {
+    var track = wrapper.querySelector("[data-carousel-track]");
+    if (!track) return;
+    var slides = Array.from(track.querySelectorAll(".carousel-slide"));
+    if (slides.length < 2) return;
+    var speed = parseInt(wrapper.getAttribute("data-carousel-speed")) || 2600;
+    var current = 0;
+
+    /* Build dot nav and insert after wrapper */
+    var dotsEl = document.createElement("div");
+    dotsEl.className = "carousel-dots";
+    slides.forEach(function (_, i) {
+      var dot = document.createElement("button");
+      dot.className = "carousel-dot" + (i === 0 ? " active" : "");
+      dot.setAttribute("aria-label", "Go to slide " + (i + 1));
+      dot.addEventListener("click", function () { goTo(i); resetTimer(); });
+      dotsEl.appendChild(dot);
+    });
+    wrapper.parentNode.insertBefore(dotsEl, wrapper.nextSibling);
+
+    function goTo(n) {
+      current = ((n % slides.length) + slides.length) % slides.length;
+      var gap = 14; /* must match CSS gap */
+      var slideW = slides[0].offsetWidth + gap;
+      track.style.transform = "translateX(-" + (current * slideW) + "px)";
+      dotsEl.querySelectorAll(".carousel-dot").forEach(function (d, i) {
+        d.classList.toggle("active", i === current);
+      });
+    }
+
+    var timer = setInterval(function () { goTo(current + 1); }, speed);
+    function resetTimer() {
+      clearInterval(timer);
+      timer = setInterval(function () { goTo(current + 1); }, speed);
+    }
+
+    /* Pause on hover */
+    wrapper.addEventListener("mouseenter", function () { clearInterval(timer); });
+    wrapper.addEventListener("mouseleave", function () { resetTimer(); });
+
+    /* Touch swipe */
+    var startX = 0;
+    wrapper.addEventListener("touchstart", function (e) {
+      startX = e.touches[0].clientX;
+      clearInterval(timer);
+    }, { passive: true });
+    wrapper.addEventListener("touchend", function (e) {
+      var diff = startX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+      resetTimer();
+    }, { passive: true });
+  });
+
   /* ---------- Smooth anchor offset for sticky nav ---------- */
   document.querySelectorAll('a[href^="#"]').forEach(function (link) {
     link.addEventListener("click", function (e) {

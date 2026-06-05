@@ -452,6 +452,71 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.03em; line-height: 1.04; }
 .legal a { color: var(--ink); text-decoration: underline; }
 
 /* ============================================================
+   SHOWCASE CAROUSEL
+   ============================================================ */
+.blog-showcase { margin: 2.5rem 0 3rem; }
+.blog-showcase-head { margin-bottom: 1.25rem; }
+.blog-showcase-head h2 { font-size: 1.35rem; margin-bottom: 6px; }
+.blog-showcase-head p  { color: var(--ink-3); font-size: 0.95rem; }
+
+.showcase-carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  /* enough room for the box-shadows */
+  padding: 4px 0 4px;
+  /* mask edges so slides fade out gracefully */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 5%, #000 95%, transparent 100%);
+          mask-image: linear-gradient(to right, transparent 0%, #000 5%, #000 95%, transparent 100%);
+}
+
+.carousel-track {
+  display: flex;
+  gap: 14px;
+  /* smooth programmatic advance */
+  transition: transform 0.48s cubic-bezier(.4,0,.2,1);
+  will-change: transform;
+}
+
+.carousel-slide {
+  flex: 0 0 150px;      /* compact portrait width */
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.carousel-slide img {
+  width: 150px;
+  height: 266px;         /* 9:16 portrait ratio */
+  object-fit: cover;
+  object-position: top;
+  border-radius: 16px;
+  display: block;
+  box-shadow: 0 4px 20px rgba(0,0,0,.13);
+}
+
+/* Dot navigation – injected by JS */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin-top: 14px;
+}
+.carousel-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--line-2);
+  cursor: pointer;
+  transition: background .2s, transform .2s;
+  border: none; padding: 0;
+  flex-shrink: 0;
+}
+.carousel-dot.active {
+  background: var(--ink);
+  transform: scale(1.3);
+}
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
 @media (max-width: 640px) {
